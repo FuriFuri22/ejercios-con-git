@@ -1,0 +1,3 @@
+Javascript lenguaje sincronico y no bloqueante. 
+
+SetTimeout no es propio de JavaScript. callback: una funcion que recibe otra funcion. 
