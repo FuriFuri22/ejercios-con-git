@@ -36,7 +36,7 @@ console.log(indice)*/
     console.log(arrayDeNumeros);
 }*/
 
-const INVITADOS = [ 'Lucas', 'Matias', 'Jose', 'Pedro', 'Martina', 'Marcelo', 'Esteban', 'Marcela', 'Martin'];
+/*const INVITADOS = [ 'Lucas', 'Matias', 'Jose', 'Pedro', 'Martina', 'Marcelo', 'Esteban', 'Marcela', 'Martin'];
 
 console.log(`El numero de invitados es ${INVITADOS.length} y el ultimo invitado es ${INVITADOS[INVITADOS.length - 1]}`);
 
@@ -47,7 +47,7 @@ INVITADOS.splice(INVITADOS.indexOf('Martina'), 1);
 const newListIN = INVITADOS.flatMap(x => [x + `. orden: ${INVITADOS.indexOf(x) + 1}`]);
 console.log(newListIN)
 
-console.log(newListIN.sort());
+console.log(newListIN.sort());*/
 
 //INVITADOS.forEach()
 
@@ -93,3 +93,74 @@ console.log(user)
 for( let key in user){
   console.log(key)
 }*/
+
+/*const prodAlgodon = {
+  pirane: 420,
+  laishi: 100,
+  ibarreta: 250,
+  "Palo Santo":120
+}
+
+let suma = 0;
+for (let key of Object.entries(prodAlgodon)){
+  suma += parseInt(key[1]);
+}
+
+console.log(suma)*/
+
+//1
+const SiXMenor = (x,y) => {if (x<y) {
+ return x/z;
+}else{
+  return x*z;
+}
+}
+//2
+const deType = (n) => {return typeof(n);}
+//3
+const seisValores = (a,b,c,d,e,f) => {
+  let ab = a + b;
+  ab -= c;
+  ab *= d;
+  ab /= e;
+  return ab**f;
+
+}
+//4
+const newArray = (array) => {array.pop();
+array.pop(); array.pop();
+return array.flatMap(x => [x]);
+}
+//5
+const ordenarArray = (array) => {return array.sort();}
+//6
+const arrayFiltrado = (a,b) => { return a.splice(a.indexOf(b), 1);}
+//7
+const sumaDeEl = (array) => {
+  let r = 0;
+  for( let x of array){
+     r+= x;
+  }
+  return r;
+}
+
+const promedio = (array) =>  { return sumaDeEl(array)/array.length;}
+//8
+
+const busqueda = (obj, s) => {
+  for (let key of Object.entries(obj)){
+    if(`${key[0]}` == s){
+     return key[1];
+    }
+  }
+}
+//9
+
+const suma = (obj) => {
+  let suma =0;
+  for (let key of Object.entries(obj)){
+   suma+=key[1]; 
+  }
+  return suma;
+}
+
